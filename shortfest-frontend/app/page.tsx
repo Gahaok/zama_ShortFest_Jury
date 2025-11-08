@@ -3,6 +3,10 @@
 import Link from 'next/link';
 import { Navigation } from '../components/Navigation';
 
+/**
+ * Home page component for ShortFest Jury
+ * Displays hero section, features, and how it works guide
+ */
 export default function HomePage() {
   return (
     <div className="min-h-screen">
