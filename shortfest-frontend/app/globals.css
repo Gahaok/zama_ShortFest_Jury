@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Global CSS variables for theme colors */
 :root {
   --foreground-rgb: 234, 234, 234;
   --background-start-rgb: 26, 26, 46;

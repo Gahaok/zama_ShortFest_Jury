@@ -6,6 +6,10 @@ import { useWallet } from '../hooks/useWallet';
 import { useState, useEffect } from 'react';
 import { useShortFestJury } from '../hooks/useShortFestJury';
 
+/**
+ * Navigation component with wallet connection and role-based menu
+ * Supports EIP-6963 wallet discovery and mobile responsive design
+ */
 export function Navigation() {
   const pathname = usePathname();
   const { account, chainId, isConnected, disconnect, connect, availableWallets } = useWallet();
