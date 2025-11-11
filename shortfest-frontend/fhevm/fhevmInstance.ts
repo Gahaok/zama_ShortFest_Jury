@@ -8,11 +8,18 @@ import type { FhevmInstance } from './fhevmTypes';
 // Re-export for convenience
 export type { FhevmInstance } from './fhevmTypes';
 
+/**
+ * Get chain ID from EIP-1193 provider
+ */
 async function getChainId(provider: Eip1193Provider): Promise<number> {
   const chainId = await provider.request({ method: 'eth_chainId' });
   return Number.parseInt(chainId as string, 16);
 }
 
+/**
+ * Attempt to fetch FHEVM relayer metadata from Hardhat node
+ * Returns undefined if not available or invalid
+ */
 async function tryFetchFHEVMHardhatNodeRelayerMetadata(rpcUrl: string): Promise<
   | {
       ACLAddress: `0x${string}`;
