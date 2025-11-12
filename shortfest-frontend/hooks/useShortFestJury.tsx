@@ -39,7 +39,10 @@ export function useShortFestJury() {
     });
   }, [provider, chainId]);
 
-  // Submit encrypted score
+  /**
+   * Submit encrypted score for a film
+   * All scores are encrypted using FHEVM before submission
+   */
   const submitScore = useCallback(async (
     filmId: number,
     narrative: number,
