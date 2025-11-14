@@ -1,3 +1,7 @@
+/**
+ * ABI generation script
+ * Reads deployment artifacts and generates TypeScript ABI files
+ */
 import * as fs from 'fs';
 import * as path from 'path';
 
