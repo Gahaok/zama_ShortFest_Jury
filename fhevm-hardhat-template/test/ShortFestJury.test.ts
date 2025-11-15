@@ -3,6 +3,10 @@ import { ethers, deployments, fhevm } from "hardhat";
 import { ShortFestJury } from "../types";
 import { HardhatEthersSigner } from "@nomicfoundation/hardhat-ethers/signers";
 
+/**
+ * Test suite for ShortFestJury contract
+ * Tests encrypted scoring, aggregation, and result publication
+ */
 describe("ShortFestJury", function () {
   let contract: ShortFestJury;
   let owner: HardhatEthersSigner;
